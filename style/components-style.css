@@ -1,0 +1,110 @@
+@import url(/style/main-style.css);
+
+.ButtonLarge{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 238px;
+    height: 238px;
+    border-radius: 20px;
+    background-color: var(--gray);
+    padding: 50px 25px 25px 25px;
+    cursor: pointer;
+}
+.ButtonLarge:hover{
+    width: 250px;
+    height: 250px;
+}
+
+.ButtonIcon{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 70px;
+    width: 70px;
+    border: 0.4rem solid var(--dark-gray);
+    border-radius: 35px;
+}
+
+.ButtonIcon > i{
+    color: var(--dark-gray);
+    font-size: 2rem;
+}
+
+.ButtonText{
+    font-family: 'SF Pro Display', sans-serif;
+    color: var(--dark-gray);
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+.ButtonMed{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 194px;
+    height: 122px;
+    border-radius: 20px;
+    background-color: var(--gray);
+    padding: 20px;
+    cursor: pointer;
+}
+.ButtonMed > i{
+    color: var(--dark-gray);
+    font-size: 1.5rem;
+}
+
+.PrimaryCard{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 150px;
+    height: 150px;
+    border-radius: 20px;
+    background-color: var(--light);
+    padding: 40px 20px 20px 20px;
+    cursor: pointer;
+}
+.PrimaryCard:hover{
+    width: 158px;
+    height: 158px;
+    background-color: var( --primary-hover);
+}
+
+.PrimaryCard > i{
+    color: var(--dark-gray);
+    font-size: 2rem;
+}
+
+.PrimaryCardText{
+    font-family: 'SF Pro Display', sans-serif;
+    color: var(--dark-gray);
+    font-size: 1.12rem;
+    font-weight: 500;
+}
+
+.ButtonPrimary{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 194px;
+    height: 68px;
+    border-radius: 30px;
+    background-color: var(--primary);
+    padding: 16px;
+    cursor: pointer;
+}
+.ButtonPrimary:hover{
+    background-color: var( --primary-hover);
+}
+
+.PrimaryText{
+    font-family: 'SF Pro Display', sans-serif;
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
