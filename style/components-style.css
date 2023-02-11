@@ -10,10 +10,16 @@
     background-color: var(--gray);
     padding: 50px 25px 25px 25px;
     cursor: pointer;
+    transition: transform 0.3s ease-out;
 }
-.ButtonLarge:hover{
+/* .ButtonLarge:hover{
     width: 250px;
     height: 250px;
+    animation-duration: 0.3s;
+} */
+
+.ButtonLarge:hover{
+    transform: scale(1.05);
 }
 
 .ButtonIcon{
@@ -57,6 +63,19 @@
     font-size: 1.5rem;
 }
 
+.ActiveIcon{
+    transform: rotate(45deg);
+}
+
+.DataText{
+    color: var(--dark-gray);
+    font-size: 1.12rem;
+    font-weight: 200;
+}
+.Hidden{
+    display: none;
+}
+
 .PrimaryCard{
     display: flex;
     flex-direction: column;
@@ -67,10 +86,10 @@
     background-color: var(--light);
     padding: 40px 20px 20px 20px;
     cursor: pointer;
+    transition: transform 0.3s ease-out;
 }
 .PrimaryCard:hover{
-    width: 158px;
-    height: 158px;
+    transform: scale(1.05);
     background-color: var( --primary-hover);
 }
 
