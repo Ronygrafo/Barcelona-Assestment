@@ -14,21 +14,33 @@
     gap: 12px;
   }
 
+  .grid-Title { 
+    grid-area: title;
+    text-align: center;
+  }
+
 /* ========== GENERAL INFO SCREEN ========== */
 
-.item1 { grid-area: title; }
-.item2 { grid-area: area; }
-.item3 { grid-area: poblacion; }
-.item4 { grid-area: religion; }
-.item5 { grid-area: capital; }
-.item6 { grid-area: gobierno; }
-.item7 { grid-area: jefe; }
-.item8 { grid-area: presidente; }
-.item9 { grid-area: lenguas; }
+#TitleGeneral {
+  grid-area: title;
+  margin-bottom: 2rem;
+}
+#GeneralArea { grid-area: area; }
+#GeneralPoblacion { grid-area: poblacion; }
+#GeneralReligion { grid-area: religion; }
+#GeneralCapital { grid-area: capital; }
+#GeneralGobierno { grid-area: gobierno; }
+#GeneralJefe { grid-area: jefe; }
+#GeneralPresidente { grid-area: presidente; }
+#GeneralLenguas { grid-area: lenguas; }
 
 .grid-general {
-
+  gap: 12px;
+  width: 86vw;
+  height: 500px;
   display: grid;
+  grid-auto-columns: minmax(0, 1fr);
+  grid-auto-flow: column;
   grid-template-areas:
     'title      title       title       title'
     'area       lenguas     capital     jefe'
@@ -37,14 +49,9 @@
     'poblacion  lenguas     gobierno    presidente'
     'religion   lenguas     gobierno    presidente'
     'religion   lenguas     gobierno    presidente';
-  gap: 12px;
 }
 
 .grid-general > div {
-  background-color: rgba(255, 255, 255, 0.8);
-  text-align: center;
-  padding: 20px 0;
-  font-size: 30px;
 }
 
 /* ========== NATIONAL INFO SCREEN ========== */
@@ -53,12 +60,6 @@
 
 
 /* ========== WEATHER INFO SCREEN ========== */
-
-
-#Weather-Title { 
-  grid-area: title;
-  text-align: center;
-}
 
 #SpainMap { grid-area: map; }
 #Oceanic-Weather { grid-area: oceanic; }
