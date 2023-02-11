@@ -16,6 +16,9 @@
     --light: #F5F5F7;
     --primary: #0071E3;
     --primary-hover: #FB526A;
+    --green: #68CC45;
+    --violet: #AC39FF;
+    --velvet: #FF0053;
   }
 
   .Site{
@@ -77,6 +80,12 @@
     left: 162px;
     z-index: 1;
   }
+  #SafariBackground{
+    position: absolute;
+    top: 56px;
+    left: 162px;
+    z-index: 2;
+  }
 
   #InteractiveNavigation{
     width: 1035px;
@@ -84,7 +93,7 @@
     position: absolute;
     top: 56px;
     left: 162px;
-    z-index: 2;
+    z-index: 3;
   }
 
 
@@ -105,6 +114,13 @@
     font-size: 4rem;
     font-weight: 400;
     margin: 1rem 0rem;
+  }
+  .Subtitle{
+    font-family: 'SF Pro Display', sans-serif;
+    color: var(--dark-gray);
+    font-size: 2.25rem;
+    font-weight: 400;
+    margin: 0rem 0rem;
   }
 
   .MainText{

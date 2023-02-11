@@ -38,39 +38,58 @@
     'religion   lenguas     gobierno    presidente'
     'religion   lenguas     gobierno    presidente';
   gap: 12px;
-  }
-
-  .grid-general > div {
-    background-color: rgba(255, 255, 255, 0.8);
-    text-align: center;
-    padding: 20px 0;
-    font-size: 30px;
-  }
-
-/* .item1 { grid-area: header; }
-.item2 { grid-area: menu; }
-.item3 { grid-area: main; }
-.item4 { grid-area: right; }
-.item5 { grid-area: footer; }
-.item6 { grid-area: a; }
-.item7 { grid-area: b; }
-.item8 { grid-area: c; }
-
-.grid-container {
-  display: grid;
-  grid-template-areas:
-    'header header header header header header'
-    'menu main main main right right'
-    'a a a b b c'
-    'footer footer footer footer footer footer';
-  gap: 10px;
-  background-color: #2196F3;
-  padding: 10px;
 }
 
-.grid-container > div {
+.grid-general > div {
   background-color: rgba(255, 255, 255, 0.8);
   text-align: center;
   padding: 20px 0;
   font-size: 30px;
+}
+
+/* ========== NATIONAL INFO SCREEN ========== */
+
+
+
+
+/* ========== WEATHER INFO SCREEN ========== */
+
+
+#Weather-Title { 
+  grid-area: title;
+  text-align: center;
+}
+
+#SpainMap { grid-area: map; }
+#Oceanic-Weather { grid-area: oceanic; }
+#Mediterran-Weather { grid-area: mediterran; }
+#SubTropical-Weather { grid-area: tropical; }
+#SemiDesert-Weather { grid-area: desert; }
+#Mountain-Weather { grid-area: mountain; }
+#Continental-Weather { grid-area: continental; }
+
+.grid-weather {
+
+  display: grid;
+  grid-template-areas:
+    'title      title       title       title   title'
+    'map      map       map       oceanic   mediterran'
+    'map      map       map       tropical  desert'
+    'map      map       map       mountain  continental';
+  gap: 12px;
+  }
+
+  .grid-weather > div {
+  }
+
+/* #Oceanic{} */
+#Subtropical:hover{background-color: var(--violet);}
+#SemiDesert:hover{background-color: var(--green);}
+#Mountain:hover{background-color: var(--velvet);}
+
+#Continental:hover{background-color: var(--dark-gray);}
+#Mediterranean:hover{ background-color: var(--primary);}
+
+/* #Continental:hover > .PrimaryCardText{
+  color: var(--light);
 } */

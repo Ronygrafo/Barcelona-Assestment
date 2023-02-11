@@ -1,6 +1,6 @@
 @import url(/style/main-style.css);
 
-.ButtonLarge{
+.ButtonLarge {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -12,17 +12,12 @@
     cursor: pointer;
     transition: transform 0.3s ease-out;
 }
-/* .ButtonLarge:hover{
-    width: 250px;
-    height: 250px;
-    animation-duration: 0.3s;
-} */
 
-.ButtonLarge:hover{
+.ButtonLarge:hover {
     transform: scale(1.05);
 }
 
-.ButtonIcon{
+.ButtonIcon {
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -34,19 +29,32 @@
     border-radius: 35px;
 }
 
-.ButtonIcon > i{
+.ButtonIcon > i {
     color: var(--dark-gray);
     font-size: 2rem;
 }
 
-.ButtonText{
+.ButtonText {
     font-family: 'SF Pro Display', sans-serif;
     color: var(--dark-gray);
     font-size: 1.5rem;
     font-weight: 500;
 }
 
-.ButtonMed{
+#Weather {
+    background-color: var(--dark-gray);
+}
+#Weather > .ButtonIcon{
+    border-color: var(--light);
+}
+#Weather > .ButtonIcon > i{
+    color: var(--light);
+}
+#Weather > .ButtonText{
+    color: var(--light);
+}
+
+.ButtonMed {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -58,28 +66,30 @@
     padding: 20px;
     cursor: pointer;
 }
-.ButtonMed > i{
+
+.ButtonMed>i {
     color: var(--dark-gray);
     font-size: 1.5rem;
 }
 
-.ActiveIcon{
+.ActiveIcon {
     transition: transform 0.3s ease-in-out;
     transform: rotate(45deg);
 }
 
 /* *** IDEA: ANIMATION FROM OPACITY */
 
-.DataText{
+.DataText {
     color: var(--dark-gray);
     font-size: 1.12rem;
     font-weight: 200;
 }
-.Hidden{
+
+.Hidden {
     display: none;
 }
 
-.PrimaryCard{
+.PrimaryCard {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -91,24 +101,25 @@
     cursor: pointer;
     transition: transform 0.3s ease-out;
 }
-.PrimaryCard:hover{
+
+.PrimaryCard:hover {
     transform: scale(1.05);
-    background-color: var( --primary-hover);
+    background-color: var(--primary-hover);
 }
 
-.PrimaryCard > i{
+.PrimaryCard> i {
     color: var(--dark-gray);
     font-size: 2rem;
 }
 
-.PrimaryCardText{
+.PrimaryCardText {
     font-family: 'SF Pro Display', sans-serif;
     color: var(--dark-gray);
     font-size: 1.12rem;
     font-weight: 500;
 }
 
-.ButtonPrimary{
+.ButtonPrimary {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -119,14 +130,22 @@
     padding: 16px;
     cursor: pointer;
 }
-.ButtonPrimary:hover{
-    background-color: var( --primary-hover);
+
+.ButtonPrimary:hover {
+    background-color: var(--primary-hover);
 }
 
-.PrimaryText{
+.PrimaryText {
     font-family: 'SF Pro Display', sans-serif;
     color: white;
     font-size: 1.5rem;
     font-weight: 500;
 }
 
+.InvertedColor:hover > .PrimaryCardText {
+    color: var(--light);
+}
+
+.InvertedColor:hover > i {
+    color: var(--light);
+}
