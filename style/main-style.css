@@ -78,6 +78,15 @@
     z-index: 1;
   }
 
+  #InteractiveNavigation{
+    width: 1035px;
+    height: 648px;
+    position: absolute;
+    top: 56px;
+    left: 162px;
+    z-index: 2;
+  }
+
 
 
 /* ====== TEXTS STYLES ===== */

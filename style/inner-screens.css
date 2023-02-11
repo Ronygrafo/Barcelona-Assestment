@@ -1,0 +1,76 @@
+@import url(/style/main-style.css);
+
+.InnerScreen{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.grid-first {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 12px;
+  }
+
+/* ========== GENERAL INFO SCREEN ========== */
+
+.item1 { grid-area: title; }
+.item2 { grid-area: area; }
+.item3 { grid-area: poblacion; }
+.item4 { grid-area: religion; }
+.item5 { grid-area: capital; }
+.item6 { grid-area: gobierno; }
+.item7 { grid-area: jefe; }
+.item8 { grid-area: presidente; }
+.item9 { grid-area: lenguas; }
+
+.grid-general {
+
+  display: grid;
+  grid-template-areas:
+    'title      title       title       title'
+    'area       lenguas     capital     jefe'
+    'area       lenguas     capital     jefe'
+    'poblacion  lenguas     capital     jefe'
+    'poblacion  lenguas     gobierno    presidente'
+    'religion   lenguas     gobierno    presidente'
+    'religion   lenguas     gobierno    presidente';
+  gap: 12px;
+  }
+
+  .grid-general > div {
+    background-color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    padding: 20px 0;
+    font-size: 30px;
+  }
+
+/* .item1 { grid-area: header; }
+.item2 { grid-area: menu; }
+.item3 { grid-area: main; }
+.item4 { grid-area: right; }
+.item5 { grid-area: footer; }
+.item6 { grid-area: a; }
+.item7 { grid-area: b; }
+.item8 { grid-area: c; }
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    'header header header header header header'
+    'menu main main main right right'
+    'a a a b b c'
+    'footer footer footer footer footer footer';
+  gap: 10px;
+  background-color: #2196F3;
+  padding: 10px;
+}
+
+.grid-container > div {
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+} */

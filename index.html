@@ -21,48 +21,7 @@
         <div class="BannerHeader"></div>
         <div class="InfoContainer">
 
-            <div id="Temp">
-
-                <a class="ButtonLarge">
-                    <span class="ButtonIcon">
-                        <i class="fa-solid fa-info"></i>
-                    </span>
-                    <span class="ButtonText">Información<br>general</span>
-                </a>
-
-
-                <a class="ButtonMed" id="poblacion">
-                    <div class="ButtonMedInfo">
-                        <span class="ButtonText">Población</span>
-                        <span class="DataText Hidden">1.636.732</span>
-                    </div>
-                    <i class="fa-solid fa-circle-plus"></i>
-                </a>
-
-                <a class="ButtonMed">
-                    <div class="ButtonMedInfo">
-                        <span class="ButtonText">Población</span>
-                        <span class="DataText">1.636.732</span>
-                    </div>
-                    <i class="fa-solid fa-circle-plus ActiveIcon"></i>
-                </a>
-
-                <a class="PrimaryCard">
-                    <i class="fa-solid fa-location-dot"></i>
-                    <span class="PrimaryCardText">Oceánico</span>
-                </a>
-
-
-                <a class="ButtonPrimary">
-                    <span class="PrimaryText">Datos curiosos</span>
-                </a>
-
-
-
-
-            </div>
-
-<!--             <main class="TextBlock">
+            <main class="TextBlock">
                 <h1 class="GradientHeadline">
                     Geografía
                 </h1>
@@ -74,12 +33,19 @@
                 <p class="MainText">
                     La mayor parte del territorio de España está integrada, junto con Portugal y Andorra, en la unidad geográfica de la península Ibérica, situada en el extremo suroccidental de Europa. Comprende, además, un conjunto de terrenos insulares como los archipiélagos de Canarias y Baleares.
                 </p>
-            </main> -->
+            </main>
 
             <div class="InteractiveLaptop">
 
                 <article class="LaptopNavigation">
-                    <nav></nav>
+
+                    <!-- FIRST SCREEN -->
+                    <!-- <iframe id="InteractiveNavigation" src="/first.html" frameborder="0"> -->
+
+                    <!-- SECOND SCREEN -->
+                    <iframe id="InteractiveNavigation" src="/general.html" frameborder="0">
+
+                    </iframe>
                     <img src="img/Rectangle 158.png" alt="background" class="StaticBackground" id="ScreenBackground">                  
                     <img src="/img/macbook.png" alt="macbook" id="macbook" class="StaticBackground">
                 </article>
@@ -96,3 +62,32 @@
     <script src="script.js"></script>
 </body>
 </html>
+
+
+<!-- ====== COMPONENTS ====== -->
+
+<!-- <a class="ButtonLarge">
+    <span class="ButtonIcon">
+        <i class="fa-solid fa-info"></i>
+    </span>
+    <span class="ButtonText">Información<br>general</span>
+</a>
+
+
+<a class="ButtonMed" id="poblacion">
+    <div class="ButtonMedInfo">
+        <span class="ButtonText">Población</span>
+        <span class="DataText Hidden">1.636.732</span>
+    </div>
+    <i class="fa-solid fa-circle-plus"></i>
+</a>
+
+<a class="PrimaryCard">
+    <i class="fa-solid fa-location-dot"></i>
+    <span class="PrimaryCardText">Oceánico</span>
+</a>
+
+
+<a class="ButtonPrimary">
+    <span class="PrimaryText">Datos curiosos</span>
+</a> -->

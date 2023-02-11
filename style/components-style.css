@@ -64,8 +64,11 @@
 }
 
 .ActiveIcon{
+    transition: transform 0.3s ease-in-out;
     transform: rotate(45deg);
 }
+
+/* *** IDEA: ANIMATION FROM OPACITY */
 
 .DataText{
     color: var(--dark-gray);

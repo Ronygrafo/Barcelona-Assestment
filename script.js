@@ -12,7 +12,6 @@ const poblacionBtn = document.getElementById("poblacion");
 poblacionBtn.addEventListener('click', () => {
     poblacionBtn.childNodes[3].classList.toggle('ActiveIcon');
     poblacionBtn.childNodes[1].childNodes[3].classList.toggle("Hidden");
-
     //console.log(poblacionBtn.childNodes)
 
   })
