@@ -1,46 +1,44 @@
 @import url('https://fonts.cdnfonts.com/css/sf-pro-display');
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    scroll-behavior: smooth;
-    font-family: sans-serif;
-  }
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-family: sans-serif;
+}
 
-                
-  
-  :root {
-    --dark-gray: #333333;
-    --gray: #E8E8E8;
-    --light: #F5F5F7;
-    --primary: #0071E3;
-    --primary-hover: #FB526A;
-    --green: #68CC45;
-    --violet: #AC39FF;
-    --velvet: #FF0053;
-  }
+:root {
+  --dark-gray: #333333;
+  --gray: #E8E8E8;
+  --light: #F5F5F7;
+  --primary: #0071E3;
+  --primary-hover: #FB526A;
+  --green: #68CC45;
+  --violet: #AC39FF;
+  --velvet: #FF0053;
+}
 
-  .Site{
-    display: flexbox;
-    width: 100vw;
-    height: 100vh;
-    justify-content: center;
-  }
-  
-  .BannerHeader{
-    height: 290px;
-    background-image: url(/img/map.png);
-  }
+.Site {
+  display: flexbox;
+  width: 100vw;
+  height: 100vh;
+  justify-content: center;
+}
 
-  .InfoContainer{
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    padding: 0 15vw;
-    align-items: center;
-  }
-  
+.BannerHeader {
+  height: 290px;
+  background-image: url(/img/map.png);
+}
+
+.InfoContainer {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 0 15vw;
+  align-items: center;
+}
+
 /*   #Temp{
     height: 800px;
     width: 1000px;
@@ -50,84 +48,86 @@
     padding-top: 30px;
   } */
 
-  .TextBlock{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 960px;
-  }
-  
-  .LaptopNavigation{
-    position: relative;
-    top: 0;
-    left: 0;
-  }
+.TextBlock {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 960px;
+}
 
-  .InteractiveLaptop{
-    width: auto;
-    height: auto;
-  }
+.LaptopNavigation {
+  position: relative;
+  top: 0;
+  left: 0;
+}
 
-  .StaticBackground{
-    position: relative;
-    top: 0;
-    left: 0;
-    z-index: 0;
-  }
+.InteractiveLaptop {
+  width: auto;
+  height: auto;
+}
 
-  #ScreenBackground{
-    position: absolute;
-    top: 56px;
-    left: 162px;
-    z-index: 1;
-  }
-  #SafariBackground{
-    position: absolute;
-    top: 56px;
-    left: 162px;
-    z-index: 2;
-  }
+.StaticBackground {
+  position: relative;
+  top: 0;
+  left: 0;
+  z-index: 0;
+}
 
-  #InteractiveNavigation{
-    width: 1035px;
-    height: 648px;
-    position: absolute;
-    top: 56px;
-    left: 162px;
-    z-index: 3;
-  }
+#ScreenBackground {
+  position: absolute;
+  top: 56px;
+  left: 162px;
+  z-index: 1;
+}
+
+#SafariBackground {
+  position: absolute;
+  top: 56px;
+  left: 162px;
+  z-index: 2;
+}
+
+#InteractiveNavigation {
+  width: 1035px;
+  height: 648px;
+  position: absolute;
+  top: 56px;
+  left: 162px;
+  z-index: 3;
+}
 
 
 
 /* ====== TEXTS STYLES ===== */
 
-  .GradientHeadline{
-    font-family: 'SF Pro Display', sans-serif;
-    color: var(--dark-gray);
-    font-size: 7rem;
-    font-weight: 500;
-    margin: 2rem 0 1rem 0;
-  }
+.GradientHeadline {
+  font-family: 'SF Pro Display', sans-serif;
+  color: var(--dark-gray);
+  font-size: 7rem;
+  font-weight: 500;
+  margin: 2rem 0 1rem 0;
+}
 
-  .MainSubtitle{
-    font-family: 'SF Pro Display', sans-serif;
-    color: var(--dark-gray);
-    font-size: 4rem;
-    font-weight: 400;
-    margin: 1rem 0rem;
-  }
-  .Subtitle{
-    font-family: 'SF Pro Display', sans-serif;
-    color: var(--dark-gray);
-    font-size: 2.25rem;
-    font-weight: 400;
-    margin: 0rem 0rem;
-  }
+.MainSubtitle {
+  font-family: 'SF Pro Display', sans-serif;
+  color: var(--dark-gray);
+  font-size: 4rem;
+  font-weight: 400;
+  margin: 1rem 0rem;
+}
 
-  .MainText{
-    font-family: sans-serif;
-    color: var(--dark-gray);
-    font-size: 1.4rem;
-    font-weight: 300;
-    margin: 0.5rem 0rem;
-  }
+.Subtitle {
+  font-family: 'SF Pro Display', sans-serif;
+  color: var(--dark-gray);
+  font-size: 2.25rem;
+  font-weight: 400;
+  margin: 0rem 0rem;
+}
+
+.MainText {
+  font-family: sans-serif;
+  color: var(--dark-gray);
+  font-size: 1.4rem;
+  font-weight: 300;
+  margin: 0.5rem 0rem;
+}

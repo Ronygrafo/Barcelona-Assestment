@@ -1,15 +1,54 @@
-//alert("hey");
+// =========== Global Variables =============== //
+const navInfo = document.getElementById("InformacionBtn")
+const navInsig = document.getElementById("InsigniasBtn")
+const navCities = document.getElementById("CiudadesBtn")
+const navWeather = document.getElementById("Weather")
+const articleScreen = document.getElementById("InteractiveNavigation");
 
+const infoBtn = document.querySelectorAll(".ButtonMed");
+
+const goBack = document.querySelector(".GoBack");
+// =========== NAVIGATION =============== //
+
+console.log(navInfo);
+console.log(navInsig);
+console.log(navCities);
+console.log(navWeather);
+
+/* navInfo.addEventListener('click', () => {
+  articleScreen.setAttribute("src","/general.html");
+}); */
+
+/* navInsig.addEventListener('click', () => {
+  articleScreen.setAttribute("src","#")
+})
+
+navCities.addEventListener('click', () => {
+  articleScreen.setAttribute("src","#")
+})
+
+navWeather.addEventListener('click', () => {
+  articleScreen.setAttribute("src","/wheater.html")
+}) */
+
+
+// =========== GO BACK BUTTON =============== //
+
+//console.log(articleScreen.src);
+//console.log(goBack);
+
+/* goBack.addEventListener('click', () => {
+    articleScreen.setAttribute("src","/first.html")
+}) */
 
 
 // =============  Med Buttom Animation - Reveal Data ================ //
 
-const InfoBtn = document.querySelectorAll(".ButtonMed");
-const lenguas = document.getElementById("LenguasBtn")
 
-//console.log(InfoBtn);
 
-InfoBtn.forEach((dataCard) => {
+//console.log(infoBtn);
+
+infoBtn.forEach((dataCard) => {
 
   dataCard.addEventListener('click', () => {
 
@@ -17,8 +56,6 @@ InfoBtn.forEach((dataCard) => {
 
     dataCard.childNodes[3].classList.toggle('ActiveIcon');
     dataCard.childNodes[1].childNodes[3].classList.toggle("Hidden");
-
-
 
 /*     dataCard.childNodes[1].childNodes.forEach((child) => {
 
@@ -35,39 +72,3 @@ InfoBtn.forEach((dataCard) => {
 
   })
 })
-
-// ======= TEST ========= //
-
-/* console.log(lenguas);
-console.log(lenguas.childNodes[1]);
-
-lenguas.childNodes[1].childNodes.forEach((child) => {
-
-  if (child.classList != undefined) {
-
-    if (child.classList.contains("Hidden")){
-      child.classList.remove("Hidden")
-    }
-    //console.log(child.classList);
-  }
-  //console.log(child.classList.contains("Hidden"));
-  //if (child.classList.contains(ActiveIcon)) {}
-});
- */
-
-
-//console.log(poblacionBtn.childNodes[1].childNodes[3]);
-
-
-/* poblacionBtn.addEventListener('click', () => {
-    poblacionBtn.childNodes[3].classList.toggle('ActiveIcon');
-    poblacionBtn.childNodes[1].childNodes[3].classList.toggle("Hidden");
-    //console.log(poblacionBtn.childNodes)
-
-  }) */
-
-/*   const btn = document.querySelector('.btn_animated')
-btn.addEventListener('click', () => {
-  btn.classList.remove('animate')
-  setTimeout(() => btn.classList.add('animate'), 100)
-}) */

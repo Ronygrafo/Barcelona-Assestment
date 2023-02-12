@@ -156,3 +156,31 @@
 .InvertedColor:hover > i {
     color: var(--light);
 }
+
+.GoBack{
+    position: fixed;
+    top: 50vh;
+    left: 128px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 64px;
+    height: 64px;
+    background-color: var(--gray);
+    border-radius: 32px;
+    -webkit-box-shadow: 4px 4px 8px 0px rgba(51,51,51,0.2);
+    -moz-box-shadow: 4px 4px 8px 0px rgba(51,51,51,0.2);
+    box-shadow: 4px 4px 8px 0px rgba(51,51,51,0.2);
+  }
+
+.GoBack > i{
+    color: var(--dark-gray);
+    font-size: 2.4rem;
+  }
+
+.GoBack:hover{
+    background-color: #8B8B8B;
+  }
+.GoBack:hover > i{
+    color: var(--light);
+  }
