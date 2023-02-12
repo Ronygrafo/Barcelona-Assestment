@@ -40,14 +40,15 @@
     padding: 0 15vw;
     align-items: center;
   }
-  #Temp{
+  
+/*   #Temp{
     height: 800px;
     width: 1000px;
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
     padding-top: 30px;
-  }
+  } */
 
   .TextBlock{
     display: flex;
