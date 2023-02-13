@@ -11,23 +11,28 @@ const navWeather = document.getElementById("Weather");
 //
 // =========== NAVIGATION =============== //
 
-navInfo.addEventListener("click", () => {
-  bc.postMessage("general");
-  console.log(navInfo);
-});
+try {
 
-navInsig.addEventListener("click", () => {
-  console.log(navInsig);
-});
+  navInfo.addEventListener("click", () => {
+    bc.postMessage("general");
+    console.log(navInfo);
+  });
+  
+  navInsig.addEventListener("click", () => {
+    console.log(navInsig);
+  });
+  
+  navCities.addEventListener("click", () => {
+    console.log(navCities);
+  });
+  
+  navWeather.addEventListener("click", () => {
+    console.log(navWeather);
+    bc.postMessage("weather");
+  });
+  
+} catch (error) {}
 
-navCities.addEventListener("click", () => {
-  console.log(navCities);
-});
-
-navWeather.addEventListener("click", () => {
-  console.log(navWeather);
-  bc.postMessage("weather");
-});
 
 // =============  Med Buttom Animation - Reveal Data ================ //
 const infoBtn = document.querySelectorAll(".ButtonMed");

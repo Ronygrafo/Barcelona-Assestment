@@ -16,7 +16,7 @@ bc.onmessage = function (message) {
       showNavDetails();
       break;
     case "weather":
-      articleScreen.setAttribute("src", "/wheater.html");
+      articleScreen.setAttribute("src", "/weather.html");
       showNavDetails();
       break;
 
