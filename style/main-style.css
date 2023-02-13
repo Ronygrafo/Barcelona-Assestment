@@ -29,6 +29,8 @@
 .BannerHeader {
   height: 290px;
   background-image: url(/img/map.png);
+  background-size: cover;
+  background-color: var(--gray);
 }
 
 .InfoContainer {
